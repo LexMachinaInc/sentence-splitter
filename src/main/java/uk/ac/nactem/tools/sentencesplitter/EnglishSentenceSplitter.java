@@ -256,11 +256,11 @@ public class EnglishSentenceSplitter {
 		LOWERCASETERMS.add("x");
 	}
 
-  public void addAbbreviation(String abbrev) {
+  public static void addAbbreviation(String abbrev) {
     ABBREVIATIONS.add(abbrev);
   }
 
-  public void addLowerCaseTerm(String term) {
+  public static void addLowerCaseTerm(String term) {
     ABBREVIATIONS.add(term);
   }
 
