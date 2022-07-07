@@ -256,10 +256,18 @@ public class EnglishSentenceSplitter {
 		LOWERCASETERMS.add("x");
 	}
 
+  public void addAbbreviation(String abbrev) {
+    ABBREVIATIONS.add(abbrev);
+  }
+
+  public void addLowerCaseTerm(String term) {
+    ABBREVIATIONS.add(term);
+  }
+
 	/**
 	 * To give this a compatible interface to Piao's SentParDetector
 	 */
-	public ArrayList<int[]> markupRawText(String input) throws Exception {
+	public ArrayList<int[]> markupRawText(String input) {
 		List<String> sentenceList = this.splitParagraph(input);
 		ArrayList<int[]> toReturn = new ArrayList<int[]>();
 		int begin = 0, end = 0;
