@@ -30,7 +30,7 @@
 	
 	<groupId>uk.ac.nactem.tools</groupId>
 	<artifactId>sentence-splitter</artifactId>
-	<version>1.0</version>
+	<version>1.1</version>
 	
 	<name>Sentence Splitter</name>
 	<inceptionYear>2017</inceptionYear>
