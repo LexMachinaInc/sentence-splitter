@@ -1,4 +1,4 @@
-/**
+/*
  * Sentence Splitter - Sentence splitter with output compatible with Scott Piao's version
  * Copyright © 2017 The National Centre for Text Mining (NaCTeM), University of
 							Manchester (jacob.carter@manchester.ac.uk)
