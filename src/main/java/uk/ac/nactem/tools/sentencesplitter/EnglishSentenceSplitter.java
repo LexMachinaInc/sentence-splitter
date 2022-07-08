@@ -42,14 +42,14 @@ public class EnglishSentenceSplitter {
   private static final Pattern CANDIDATE = Pattern.compile(
       // 11111
         "(.*?)"
-          // 2222222222222222222222222222222222222222
-          + "(\\S&&[^-:=+'\"(\\[{]+[.!?][\"')\\]}>]*)"
+          // 222222222222222222222222222222222222222222222222222222
+          + "([\\S&&[^-:=+'\"\\(\\[\\{]]+[\\.!?][\"\'\\)\\]\\}>]*)"
           // 3333334444445555
           + "(\\s+)(\\S+)(.*)",
       Pattern.DOTALL);
 
   /** Split after [.?!] followed by any right bracketing */
-  private static final Pattern RULE0 = Pattern.compile("\\S+[.!?][\"')\\]}>]+\\s+\\S+");
+  private static final Pattern RULE0 = Pattern.compile("\\S+[\\.!?][\"\'\\)\\]\\}>]+\\s+\\S+");
 
   /** Split after [?!] followed by whitespace */
   private static final Pattern RULE1 = Pattern.compile("\\S+[!?]\\s+\\S+");
